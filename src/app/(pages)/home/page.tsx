@@ -56,8 +56,7 @@ export default function Home() {
           <div>
             <h1 className="text-3xl font-bold mb-1">Olá, {userName}</h1>
             <p className="text-gray-600 text-sm">
-              Para acessar os contadores de tickets é só expandir os indicadores
-              que deseja visualizar e utilizar normalmente
+              Banco de imagens
             </p>
           </div>
         </div>
