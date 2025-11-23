@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
     domains: ['github.com', 'randomuser.me'],
   },
   devIndicators: false,
-  output: 'standalone',
+
   experimental: {
     optimizePackageImports: ['lucide-react', 'recharts'],
   },
