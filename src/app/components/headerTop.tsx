@@ -1,14 +1,8 @@
-import { useAuth } from "@/hooks/useAuth";
 import { ROUTES } from "@/routes/routes";
 import {
-  Box,
-  Calendar,
   CodeXml,
-  FileText,
-  Home,
   ImageIcon,
   LogOut,
-  MessageSquare,
   Settings,
   User,
 } from "lucide-react";
@@ -21,14 +15,8 @@ export default function HeaderTop() {
   const pathname = usePathname();
   const [online, setOnline] = useState(true);
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const { logout } = useAuth();
 
   const handleStatusToggle = () => setOnline(!online);
-
-  function handleSignOut() {
-    logout();
-    setDropdownOpen(false);
-  }
 
   const menuItems = [
     { icon: ImageIcon, href: ROUTES.HOME, label: "Imagens" },
@@ -94,7 +82,7 @@ export default function HeaderTop() {
               </button>
               <button
                 className="flex items-center w-full px-4 py-2 hover:bg-gray-100"
-                onClick={handleSignOut}
+                onClick={() => {}}
               >
                 <LogOut className="w-4 h-4 mr-2" /> Sair
               </button>
